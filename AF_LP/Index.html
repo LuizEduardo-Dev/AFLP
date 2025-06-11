@@ -14,16 +14,21 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
+            <!-- Logo -->
             <a class="navbar-brand" href="#">AF-ToDo</a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
+            <!-- Botão de alternância de tema -->
             <button id="themeToggle" class="btn btn-outline-secondary ms-auto">
                 <i class="fas fa-moon"></i>
             </button>
 
+            <!-- Menu colapsável -->
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
@@ -44,15 +49,22 @@
     </div>
 
     <!-- ToDo Container -->
-    <div class="container mt-5 col-4">
-        <div class="input-group mb-3">
+   <div class="container mt-5">
+    <div class="row justify-content-center">
+        <!-- Input -->
+        <div class="col-2 col-md-4 mb-3">
             <input type="text" class="form-control" id="taskInput" placeholder="Digite sua tarefa" />
-            <button class="btn btn-outline-primary" type="button" id="addTaskBtn">Adicionar</button>
         </div>
-        <ul class="list-group mt-3" id="taskList"></ul>
+        <!-- Botão -->
+        <div class="col-2 col-md-2 mb-3">
+            <button class="btn btn-outline-primary w-100" type="button" id="addTaskBtn">Adicionar</button>
+        </div>
     </div>
+    <ul class="list-group mt-3" id="taskList"></ul>
+</div>
 
     <script src="todo.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
